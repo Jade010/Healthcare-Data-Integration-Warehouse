@@ -15,8 +15,8 @@ This repository contains an end-to-end database development project focused on d
 ## 4. Repository Structure
 ### Stage 1: Documentation & Initial Setup [Current]
 * [x] Requirements & Scope
-* [x] Data Generation (Python & SQL scripts)
-* [x] Target Schema Design (`Hospital_DW`)
+* [ ] Data Generation (Python & SQL scripts)
+* [ ] Target Schema Design (`Hospital_DW`)
 
 ### Stage 2: Database Modeling [Not Started]
 * Development of the **Staging Area** to land raw data
