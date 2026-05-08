@@ -12,3 +12,8 @@ To simulate a production environment, I used Python to generate messy source fil
 ### Source System: Lab Results (CSV)
 * **File:** `Lab_Results.csv`
 * **Challenge:** Date format is `YYYY/DD/MM` (requires SSIS Expression/Conversion) and fees include currency symbols (requires string manipulation).
+
+## Setup Instructions
+1.  **Database:** Execute the SQL scripts in `/SQL_Setup/` to create the Target and Legacy databases.
+2.  **Data Generation:** Run the Python script `generate_data.py` to create the local CSV and Excel source files.
+3.  **SSIS:** Open the Visual Studio solution and update the Connection Managers to point to your local file paths.
