@@ -8,7 +8,7 @@ A regional health network is consolidating three separate data silos (insurance 
 
 ## Architecture Overview
 
-![Architecture Diagram](URL or Path)
+![Architecture Diagram](https://github.com/Jade010/Healthcare-Data-Integration-Warehouse/blob/main/05-documentation/Architecture%20Diagram.png)
 
  
 ## Repository Structure
