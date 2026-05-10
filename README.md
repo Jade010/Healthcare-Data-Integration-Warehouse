@@ -42,7 +42,7 @@ Healthcare-Data-Integration-Warehouse/
 
 ## Folder Summaries
  
-| Folder | Purpose |
+| Folder | Summary |
 |---|---|
 | `01-data-generation` | Python and SQL scripts that generate 350,000 total rows of intentionally dirty source data across three systems |
 | `02-SSIS-ETL` | SSIS packages that clean and load data through staging into a star schema data warehouse |
