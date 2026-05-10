@@ -1,5 +1,5 @@
 # Healthcare Database Developer Poject
-***Last updated:** 05/07/2026*
+***Last updated:** 05/10/2026*
 
 An end-to-end database developer portfolio project that demonstrates my experience with ETL pipeline development, data quality remediation, dimensional data warehouse design, and business intelligence reporting using SQL Server, SSIS, Python, and Power BI.
 
@@ -8,7 +8,7 @@ A regional health network is consolidating three separate data silos (insurance 
 
 ## Architecture Overview
 
-
+![Architecture Diagram](URL or Path)
 
  
 ## Repository Structure
