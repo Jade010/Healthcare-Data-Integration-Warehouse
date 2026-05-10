@@ -24,7 +24,7 @@ Healthcare-Data-Integration-Warehouse/
 │   ├── patient_claims.csv
 │   └── provider.xlsx
 │
-├── 02-etl-ssis/                     ← SSIS packages, staging and warehouse DDL (Not Started)
+├── 02-SSIS-ETL/                     ← SSIS packages, staging and warehouse DDL (Not Started)
 │   └── README.md
 │
 ├── 03-stored-procedures/            ← All SQL stored procedures and views (Not Started)
