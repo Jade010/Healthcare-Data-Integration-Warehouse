@@ -1,38 +1,77 @@
 # Healthcare Database Developer Poject
-**Last updated:** 05/07/2026
+***Last updated:** 05/07/2026*
 
-## Project Overview
-This repository contains an end-to-end database development project focused on designing and building a data pipeline using SQL Server, SSIS, and Power BI. This scenario involves a healthcare system migrating data from siloed satellite clinics and legacy platforms into a centralized Data Warehouse. My primary objective is to demonstrate my process using ETL processes using SSIS, handling messy data issues such as data conversion, truncation hadling, data standardization, and multi-source integration.
+An end-to-end database developer portfolio project that demonstrates my experience with ETL pipeline development, data quality remediation, dimensional data warehouse design, and business intelligence reporting using SQL Server, SSIS, Python, and Power BI.
 
-## Business Problem & Requirements
-**Scenario:** A regional hospital system is unable to gain a holistic view of patient care because patient records, lab results, and clinic visits are stored in three different formats.
+## Business Problem
+A regional health network is consolidating three separate data silos (insurance claims, provider records, and lab results) into a central data warehouse to support a new population health dashboard. Raw data from each source contains significant quality issues and must be cleaned, standardized, and validated before any reporting can occur.
 
-**Project Goals:**
-1.  **Consolidate Data:** Integrate a Legacy SQL Server table, an Excel clinic export, and a CSV lab results file.
-2.  **Ensure Integrity:** Standardize location codes and validate data types.
-3.  **Error Handling:** Implement a "Redirection" logic for rows that fail truncation or conversion tests to ensure the package doesn't crash during production runs.
+## Architecture Overview
 
-## 4. Repository Structure
-### Stage 1: Documentation & Initial Setup [Current]
-* [x] Requirements & Scope
-* [ ] Data Generation (Python & SQL scripts)
-* [ ] Target Schema Design (`Hospital_DW`)
 
-### Stage 2: Database Modeling [Not Started]
-* Development of the **Staging Area** to land raw data
-* Creation of the **Fact and Dimension tables** (Star Schema)
-* Implementation of Primary/Foreign Key constraints
 
-### Stage 3: ETL Development (SSIS) [Not Started]
-* **Control Flow:** Implementation of Sequence Containers and Execute SQL Tasks
-* **Data Flow:** Use of Derived Columns, Data Conversions, and Lookups
-* **Error Handling:** Configuring Error Output paths for Truncation and Transformation failures
+ 
+## Repository Structure
+```
+Healthcare-Data-Integration-Warehouse/
+│
+├── README.md                        ← You are here. Welcome in!
+│
+├── 01-data-generation/              ← Source data scripts and output files
+│   ├── README.md
+│   ├── generate_csv.py
+│   ├── generate_excel.py
+│   ├── create_lab_results.sql
+│   ├── patient_claims.csv
+│   └── provider.xlsx
+│
+├── 02-etl-ssis/                     ← SSIS packages, staging and warehouse DDL (Not Started)
+│   └── README.md
+│
+├── 03-stored-procedures/            ← All SQL stored procedures and views (Not Started)
+│   └── README.md
+│
+├── 04-powerbi/                      ← Power BI report files and documentation (Not Started)
+│   └── README.md
+│
+├── 05-docs/                         ← Architecture diagrams and data dictionary (Not Started)
+│   └── README.md
+│
+└── 06-other/                        ← Miscellaneous scripts, config, and notes (Not Started)
+    └── README.md
+```
 
-### Stage 4: Logic & Optimization [Not Started]
-* Stored Procedures for Post-Load processing
-* Indexing for performance tuning
+## Folder Summaries
+ 
+| Folder | Purpose |
+|---|---|
+| `01-data-generation` | Python and SQL scripts that generate 350,000 total rows of intentionally dirty source data across three systems |
+| `02-SSIS-ETL` | SSIS packages that clean and load data through staging into a star schema data warehouse |
+| `03-stored-procedures` | Load procedures, audit logging, and reporting views that run on top of the warehouse |
+| `04-PowerBI` | Power BI dashboard connecting to the warehouse for health reporting |
+| `05-documentation` | Architecture diagrams, data flow diagrams, and a full data dictionary |
+| `06-other` | Setup notes, environment config, and any miscellaneous supporting files |
+ 
 
-### Stage 5: BI & Reporting [Not Started]
-* Power BI integration via DirectQuery/Import
-* DAX measure creation for patient visit metrics
-* Interactive Dashboard design.
+## Tech Stack
+ 
+| Tool | Purpose |
+|---|---|
+| SQL Server (I'm using Developer) | Staging database, data warehouse, stored procedures |
+| SSMS | Schema management and query development |
+| Visual Studio + SSIS extension | ETL package development |
+| Python 3.14 | Source data generation |
+| Power BI Desktop | Dashboard and reporting |
+| Git + GitHub | Version control and portfolio hosting |
+
+## How to Run the Full Project
+ 
+Follow each folder's README in order:
+ 
+1. **`01-data-generation`** — Generate the three source files
+2. **`02-SSIS-ETL`** — Set up the database schemas and run the SSIS packages
+3. **`03-stored-procedures`** — Deploy all stored procedures and views
+4. **`04-powerbi`** — Open the `.pbix` file and connect to your SQL Server instance
+ 
+ 
+ 
