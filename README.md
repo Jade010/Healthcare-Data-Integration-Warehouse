@@ -1,7 +1,7 @@
 # Healthcare Database Developer Poject
 ***Last updated:** 05/10/2026*
 
-An end-to-end database developer portfolio project that demonstrates my experience with ETL pipeline development, data quality remediation, dimensional data warehouse design, and business intelligence reporting using SQL Server, SSIS, Python, and Power BI.
+My end-to-end database developer portfolio project that demonstrates my experience with ETL pipeline development, data quality remediation, dimensional data warehouse design, and business intelligence reporting using SQL Server, SSIS, Python, and Power BI.
 
 ## Business Problem
 A regional health network is consolidating three separate data silos (insurance claims, provider records, and lab results) into a central data warehouse to support a new population health dashboard. Raw data from each source contains significant quality issues and must be cleaned, standardized, and validated before any reporting can occur.
@@ -20,11 +20,10 @@ Healthcare-Data-Integration-Warehouse/
 │   ├── README.md
 │   ├── generate_csv.py
 │   ├── generate_excel.py
-│   ├── create_lab_results.sql
-│   ├── patient_claims.csv
-│   └── provider.xlsx
+│   ├── create_sql_table.sql
+│   └── provider_directory.xlsx
 │
-├── 02-SSIS-ETL/                     ← SSIS packages, staging and warehouse DDL (Not Started)
+├── 02-SSIS-ETL/                     ← SSIS packages, staging and warehouse DDL (CURRENTLY WORKING ON)
 │   └── README.md
 │
 ├── 03-stored-procedures/            ← All SQL stored procedures and views (Not Started)
